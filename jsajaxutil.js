@@ -1,15 +1,3 @@
-/*
-ajaxutil("post","testAjax","cmd=update&uname=123123",true,function(req){
-						//alert("200");
-						var result = req.responseText;
-						//var doc = req.responseXML;
-						document.getElementById("showmsg").innerHTML="<img src='images/82.gif'/>";
-						alert(result);
-						//alert(doc.getElementsByTagName("name")[0].firstChild.data);
-					},function(){
-						document.getElementById("showmsg").innerHTML="<img src='images/loading.gif'/>";
-					} )
-*/
 	function ajaxutil(method,url,data,async,hander200,loading,hander404,hander500){
 			var request = null;
 			if(window.XMLHttpRequest){
